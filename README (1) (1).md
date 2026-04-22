@@ -102,4 +102,6 @@ function swapTokens(
     bool feeOnTransfer
 )
 
-#bnb #BNB #opBNB 
+#bnb #BNB #opBNB
+
+BNB, BNB Chain, BSC, BNB Smart Chain, opBNB
