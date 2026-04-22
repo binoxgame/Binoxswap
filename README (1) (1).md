@@ -1,97 +1,105 @@
-# 🔁 Binox Swap — BNB Smart Chain (BSC) DEX
+# 🔁 Binox Swap
 
-**Binox Swap** is a decentralized exchange (DEX) built on **BNB Smart Chain (BSC) ,eth,polygon,arbitrum**, part of the **BNB Chain ecosystem**.
-
-This project leverages **BNB**, **BNB Chain**, and **BSC infrastructure** to provide fast, low-cost, and secure token swaps.
-
-🌐 Website: https://binoxswap.sbs  
+A decentralized exchange (DEX) for fast and low-cost token swaps built on **BNB Smart Chain (BSC),eth,polygon,arbitrum** and compatible with EVM networks.
 
 ---
 
-# 🚀 Built on BNB Chain Ecosystem
+## 🚀 Technology Stack
 
-Binox Swap is fully powered by:
-
-- ✅ **BNB Smart Chain (BSC)**
-- ✅ **BNB Chain infrastructure**
-- ✅ Native **BNB token payments**
-- 🔜 Future support for **opBNB**
-- 🔜 Potential integration with **BNB Greenfield**
+- **Blockchain**: BNB Smart Chain (BSC) + EVM-compatible chains  
+- **Smart Contracts**: Solidity ^0.8.20  
+- **Frontend**: React.js + ethers.js  
+- **Development**: Hardhat, OpenZeppelin  
 
 ---
 
-# 🌐 Supported Networks (BNB Chain)
+## 🌐 Supported Networks
 
-| Network | Chain ID |
-|--------|--------|
-| **BNB Smart Chain (BSC) Mainnet** | 56 |
-| **BNB Smart Chain Testnet** | 97 |
-| **opBNB (BNB Chain L2)** | Coming Soon |
+- **BNB Smart Chain Mainnet (BSC)** — Chain ID: 56  
+- **BNB Smart Chain Testnet** — Chain ID: 97  
+- **Ethereum Mainnet** — Chain ID: 1 *(future support)*  
 
 ---
 
-# 📜 Smart Contract (BSC)
+## 📜 Contract Addresses
 
-| Network | Contract |
-|--------|--------|
-| **BNB Smart Chain (BSC)** | `0x032e8e2AfE6286E39AdBE008a9EbA05b9E879Ea5` |
+| Network | Core Contract (BinoxSwap) | Token Contract | Router |
+|--------|--------------------------|----------------|--------|
+| **BNB Mainnet (BSC)** | `0x032e8e2AfE6286E39AdBE008a9EbA05b9E879Ea5` | — | PancakeSwap V2 |
+| **Ethereum** |`0xC24b894a454bbe63156589c26c553edE7405761A`|
+| **polygon** | `0xC24b894a454bbe63156589c26c553edE7405761A` |
+| **arbitrum** | `0x693Fb4ABE8b39c081b102f0E8C6f1E6F8A5CEb89` |
 
----
 
-# ⚡ Core Features on BNB Chain
 
-## 🔄 Token Swaps (BSC)
-- Swap any **BEP-20 tokens on BNB Smart Chain**
-- Supports:
-  - Token ↔ Token
-  - BNB ↔ Token
-- Uses **BNB Chain liquidity pools**
+
 
 ---
 
-## 💸 Low Fees with BNB
-- Transactions paid in **BNB**
-- Ultra-low gas fees via **BSC**
-- Configurable swap fee (0.5% default)
+## ⚡ Features
+
+- 🔄 **Low-cost swaps on BNB Chain**  
+- 💱 **Swap any BEP-20 token instantly**  
+- ⚡ **Fast transactions with minimal gas (BNB)**  
+- 💸 **Configurable fee system (0.5% default)**  
+- 🔐 **Secure smart contract with reentrancy protection**  
+- 💧 **Liquidity support (Token + Token / Token + BNB)**  
+- 📊 **Real-time price estimation via router**  
+- 🧩 **Compatible with PancakeSwap liquidity pools**  
 
 ---
 
-## ⚡ BNB Chain Routing Engine
-- Integrates with **BSC DEX routers**
-- Real-time price via liquidity pools
-- Supports fee-on-transfer tokens
+## 🔒 Smart Contract Highlights
+
+- ReentrancyGuard protection  
+- SafeERC20 token handling  
+- Owner-controlled fee system  
+- Emergency withdrawal functions  
+- Supports fee-on-transfer tokens  
 
 ---
 
-## 🔒 Secure Smart Contract (BSC)
+## 💰 Fee System
 
-Built using best practices for **BNB Chain smart contracts**:
-
-- Reentrancy protection  
-- Safe ERC20 handling  
-- Owner-controlled parameters  
-- Emergency withdrawal  
-
----
-
-## 💧 Liquidity on BNB Smart Chain
-- Add liquidity on **BSC pools**
-- Token + Token  
-- Token + BNB  
+| Type | Value |
+|------|------|
+| Swap Fee | 0.5% |
+| Max Fee | 5% |
+| Network | BNB Smart Chain (BSC) |
 
 ---
 
-# ⚙️ Key Functions
+## 🌐 BNB Chain Integration
 
-```solidity
-function swapTokens(
-    address tokenA,
-    address tokenB,
-    uint amountIn,
-    uint amountOutMin,
-    uint deadline,
-    bool feeOnTransfer
-)
+Binox Swap is deeply integrated with the **BNB Chain ecosystem**, utilizing:
+
+- **BNB Smart Chain (BSC)** for fast and cheap transactions  
+- Native **BNB token** for gas fees  
+- Compatibility with existing **BNB Chain DEX liquidity**  
+- Future support for **opBNB (Layer 2 scaling)**  
+- Potential integration with **BNB Greenfield (decentralized storage)**  
+
+---
+
+## 🌍 Website
+
+👉 https://binoxswap.sbs  
+
+---
+
+## 📈 Roadmap
+
+- 🔜 Multi-chain expansion (Ethereum, Polygon, Arbitrum)  
+- 🔜 Advanced analytics dashboard  
+- 🔜 Token listing UI  
+- 🔜 Aggregated liquidity routing  
+- 🔜 DAO governance  
+
+---
+
+## 🧾 License
+
+MIT License  
 
 
 
