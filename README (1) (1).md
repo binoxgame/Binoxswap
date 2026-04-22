@@ -122,3 +122,11 @@ If you want next level (for **BNB Chain grant approval**), I can add:
 - 🎯 “Built on BNB Chain” hero section (like top projects)
 
 Just say: **make it grant-ready 🔥**
+
+- **BNB**
+- **BNB Chain**
+- **BSC**
+- **BNB Smart Chain**
+- **opBNB**
+- **Greenfield**
+#bnb #BNB
